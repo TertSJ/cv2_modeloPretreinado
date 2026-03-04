@@ -12,7 +12,7 @@ model = fasterrcnn_resnet50_fpn(weights=weights)
 model.eval()
 
 
-cap = cv2.VideoCapture(0)  # 0 = webcam padrão
+cap = cv2.VideoCapture(0)  
 
 transform = transforms.Compose([
     transforms.ToTensor()
